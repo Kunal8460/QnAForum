@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b361cd597d.js" crossorigin="anonymous"></script>
+    <script type="module" src="../JS/index.js" defer></script>
+</head>
+
+<body>
+    <nav class="bg-[#0e4667] text-white sticky top-0 z-[2]">
+        <div class="container mx-auto flex flex-wrap justify-around ">
+            <div class="branding flex ">
+                <img src="../images/logo.png" alt="Cube" class="w-[80px]">
+                <span class="self-center text-2xl font-casc mr-10">Cube</span>
+            </div>
+            <ul class="hidden md:flex md:self-center md:gap-12">
+                <li class="transition-all duration-200 ease-in"><a href="#" class="peer focus:outline-none">Home</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <!-- <li class="transition-all duration-200 ease-in"><a href="#" class="peer focus:outline-none">Product</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <li class="transition-all duration-200 ease-in"><a href="#" class="peer focus:outline-none">Pricing</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li> -->
+                <li class="transition-all duration-200 ease-in"><a href="#" class="peer focus:outline-none">Support</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <li class="transition-all duration-200 ease-in"><a href="#footer" class="peer focus:outline-none">Contact Us</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <li class="transition-all duration-200 ease-in"><a href="#footer" class="peer focus:outline-none">About Us</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+            </ul>
+            <ul
+                class="nav-menu transition-all duration-200 ease nav-menu md:hidden fixed top-14 -right-full bg-[#0e4667] w-full text-white">
+                <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
+                        class="peer">Home</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <!-- <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
+                        class="peer">Product</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
+                        class="peer">Pricing</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li> -->
+                <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#"
+                        class="peer">Support</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#footer"
+                        class="peer">Contact Us</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+                <li class="nav-item transition-all duration-200 ease-in block w-fit my-4 mx-auto "><a href="#footer"
+                        class="peer">About Us</a>
+                    <hr class="transition-all duration-200 ease w-0 peer-hover:w-full peer-focus:w-full">
+                </li>
+            </ul>
+            <div class="absolute right-0 hamburger md:hidden w-8 mr-4 self-center">
+                <div class="bar transition-all duration-300 ease bg-white h-[2px] w-full my-2"></div>
+                <div class="bar transition-all duration-300 ease bg-white h-[2px] w-[80%] my-2"></div>
+                <div class="bar transition-all duration-300 ease bg-white h-[2px] w-full my-2"></div>
+            </div>
+        </div>
+    </nav>
+    <section
+        class="text-center md:text-left md:bg-[url('./images/landing.png')] md:bg-cover md:bg-no-repeat md:h-[650px] lg:h-[700px] md:bg-bottom lg:bg-top">
+        <div class="section container mx-auto">
+            <div class="descript md:w-[60%] md:ml-8 px-4 pb-10 pt-20 flex flex-col justify-center gap-1">
+                <div class="w-full text-[#0e4667] text-[100px] font-bold font-casc select-none">Cube</div>
+                <div class="w-full text-[#0e4667] text-2xl select-none">Share and Grow the knowledge</div>
+                <div class="text-[#0e4667] text-lg md:w-[70%] select-none">We want to connect with the people who will
+                    share their
+                    knowledge from one person to another through <span class="font-casc">Cube</span> Q&A forum</div>
+                <div class="buttons">
+                    <button class="cool-btn text-xl select-none"><a href="#loginBlock" class="focus:outline-none">Get
+                            Started</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class=" md:bg-[url('./images/login.png')] md:bg-cover md:bg-no-repeat md:h-[650px] lg:h-[700px] md:bg-bottom lg:bg-top">
+        <div class="section container mx-auto">
+            <form method="post">
+                <div class="descript md:w-[55%] md:ml-auto px-4 pb-10 pt-20 flex flex-col justify-center gap-1">
+                    <div id="loginBlock" class="w-full text-[#0e4667] text-4xl font-bold font-casc mb-6 select-none">
+                        Login
+                    </div>
+                    <div class="label text-lg select-none text-[#0e4667]">University Email </div>
+                    <div class="w-full"><input type="email" name="logemail" id="logemail"
+                            class="Email form-inputBox md:w-[90%] lg:w-[80%] xl:w-[60%]"
+                            placeholder="example@university.com" required></div>
+                    <div class="label text-lg select-none text-[#0e4667]">Password </div>
+                    <div class="w-full"><input type="password" name="logpass" id="logpass"
+                            class="Password form-inputBox md:w-[90%] lg:w-[80%] xl:w-[60%]">
+                    </div>
+                    <div class="buttons flex justify-between w-full md:w-[80%] lg:w-[60%]">
+                        <button type="submit" value="submit" class="cool-btn text-xl select-none"
+                            id="login">Login</button>
+                        <!-- <button type="submit" value="submit"
+                            class="btn mt-[15px] inline-flex justify-center align-center">
+                            <span class="text-white select-none">Sign up with </span>
+                            <span class="inline-block w-[40px]">
+                                <img src="./Assets/images/google.ico" alt=""
+                                    class="h-[25px] w-[25px] ml-3 mt-[.1rem] invert">
+                            </span>
+                        </button> -->
+                    </div>
+                    <div class="px-2 text-lg font-semibold select-none">Don't have an account? <a href="#regPopup"
+                            class="text-[#0e4667] font-casc underline select-none">Sign Up</a></div>
+                    <div class="px-2 text-lg font-semibold select-none"> Forgot password? <a href="#forgotPass"
+                            class="text-[#0e4667] font-casc underline select-none">Change password</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Registration form -->
+    <div id="regPopup"
+        class="z-[2] fixed top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,.8)] hidden target:block select-none overflow-auto">
+        <div
+            class=" w-full sm:w-[80%] md:[60%] lg:w-[50%] wrapper my-[10px] sm:my-[30px] lg:my-[50px] mx-auto bg-[#d4efea] relative rounded-lg">
+            <a href="#login" class="close absolute top-2 right-6 font-bold text-2xl">&times;</a>
+            <div class="content max-h-[50%] overflow-auto">
+                <h3 class="text-2xl font-semibold text-center mt-11 mb-4">Register to <span
+                        class="font-casc bg-[#0e4667] text-white px-1 py-2 rounded-md">Cube</span></h3>
+                <form action="" method="post" class="w-[80%] my-1 mx-auto">
+                    <div class="flex gap-2">
+                        <div class="text-lg w-1/2">
+                            <div>First name</div>
+                            <div><input type="text" name="fname" id="fname" class="First-name form-inputBox"></div>
+                        </div>
+                        <div class="text-lg w-1/2">
+                            <div>Last name</div>
+                            <div><input type="text" name="lname" id="lname" class="Last-name form-inputBox"></div>
+                        </div>
+
+                    </div>
+                    <div class="text-lg">Email</div>
+                    <div><input type="email" name="regemail" id="regemail" class="Email form-inputBox"
+                            placeholder="example@university.com"></div>
+                    <div class="text-lg">Create Password</div>
+                    <div><input type="password" name="regpass" id="regpass" class="Password form-inputBox"></div>
+                    <div class="text-lg">Date of birth</div>
+                    <div><input type="date" class="Date-of-birth form-inputBox" id="dob"></div>
+                    <div class="fields flex justify-between gap-2">
+                        <div class="w-1/2 text-lg">
+                            <label for="gradYear">Graduation Year </label>
+                            <div><select id="gradYear" name="gradYear" class="Last-year form-inputBox">
+                                    <option value="0">Graduation Year</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                </select></div>
+                        </div>
+                        <div class="w-1/2 text-lg">
+                            <label for="semester">Semester </label>
+                            <div><select id="semester" name="semester" class="Semester form-inputBox">
+                                    <option value="0">Semester</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select></div>
+                        </div>
+                    </div>
+                    <!-- <div class="text-lg mb-1">Register as</div>
+                    <div class="radio-wrapper flex gap-4">
+                        <div class="form-radio">
+                            <input type="radio" name="ras" id="prof" class="peer hidden"><label for="prof"
+                                class="radio-btn">Professor</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="ras" id="stud" class="peer hidden"><label for="stud"
+                                class="radio-btn">Student</label>
+                        </div>
+                    </div> -->
+                    <div class="mb-6 w-fit ml-auto">
+                        <button name="verify" id="veri-reg-data" class="cool-btn">Verify Details</button>
+                        <button id="sending-reg-otp" class="cool-btn hidden">Sending OTP...</button>
+                    </div>
+                    <div class="text-lg reg-otp-lbl hidden">Enter OTP</div>
+                    <div><input type="text" id="otp-reg" class="otp form-inputBox hidden"></div>
+                    <div class="mb-6 w-fit ml-auto">
+                        <button type="submit" value="submit" name="submit" id="signup"
+                            class="cool-btn hidden">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Email and sending otp for Forgot password form -->
+    <div id="forgotPass"
+        class="z-[2] fixed top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,.8)] hidden target:block select-none">
+        <div
+            class=" w-full sm:w-[80%] md:[60%] lg:w-[50%] wrapper my-[10px] sm:my-[30px] lg:my-[50px] mx-auto bg-[#d4efea] relative rounded-lg">
+            <a href="#login" class="close absolute top-2 right-6 font-bold text-2xl">&times;</a>
+            <div class="content max-h-[50%] overflow-auto">
+                <h3 class="text-2xl font-semibold text-center mt-11 mb-4">Change your <span
+                        class="font-casc bg-[#0e4667] text-white px-1 py-2 rounded-md">Cube</span> Password</h3>
+                <form action="" class="w-[80%] my-1 mx-auto">
+                    <div class="text-lg">Unviversity Email</div>
+                    <div><input type="email" name="fpemail" id="fpemail" class="Email form-inputBox mb-2"
+                            placeholder="example@university.com"></div>
+                    <button type="submit" class="btn h-[35px] mb-4 get-otp-btn">Get OTP</button><button type="submit"
+                        class="btn h-[35px] mb-4 get-otp-loading hidden" disabled>Sending...</button>
+                    <div class="text-lg enter-otp-lbl hidden">Enter Otp</div>
+                    <div><input type="text" name="number" id="number" class="OTP form-inputBox hidden"></div>
+                    <div class="text-right"><button type="submit" class="cool-btn verify-otp hidden">Verify</button>
+                    </div>
+                </form>
+                <form action="" method="post" class="main-pass-form w-[80%] my-1 mx-auto hidden">
+                    <div class="text-lg">Password</div>
+                    <div><input type="password" name="fppass" id="fppass" class="Password form-inputBox"></div>
+                    <div class="text-lg">Re-enter Password</div>
+                    <div><input type="password" name="refppass" id="refppass" class="Password form-inputBox"></div>
+                    <div class="mb-6 text-right">
+                        <button type="submit" value="submit" name="submit" id="changePass" class="cool-btn">Change
+                            password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#0e4667] text-lg text-white py-6 px-8" id="footer">
+        <div class="content-wrapper container flex flex-wrap justify-between mx-auto pt-2 pb-4">
+            <div class="contect-wrapper px-3 my-2">
+                <Strong class="block underline">Contact Us:</Strong>
+                <div><i class="fa-solid fa-envelope pt-3 mx-3 text-lg text-white"></i><span>cubeqnaforum@gmail.com</span></div>
+                <div><i class="fa-solid fa-phone pt-3 mx-3 text-lg text-white"></i><span>0261-255 8030</span></div>
+                <div class="ml-[42px]">0261-255 8031</div>
+            </div>
+            <div class="contect-wrapper px-3 xl:w-[53%] my-2">
+                <Strong class="block underline">About Us:</Strong>
+                <div>Our mission is to create interaction within students, so that they can share their knowledge and solve each others' problems in various subjects which help them to grow in their education career.</div>
+            </div>
+        </div>
+        <div class="copyright flex flex-wrap container justify-between px-3 mx-auto">
+            <p class="my-1">Copyrights <i class="fa-solid fa-copyright mx-1 text-lg text-white"></i>  2019 - 2024&nbsp;&nbsp;&nbsp;Department of ICT</p>
+            <p class="my-1 block w-fit mx-auto"><strong><em>Created by:</em></strong> <em>Bhavin Jariwala | Kunal Jadhav | Kiyan Morena</em></p>
+        </div>
+    </footer>
+</body>
+<script>
+    const elems = document.querySelectorAll('section');
+    const options = {
+        root: null,
+        threshold: 0,
+        rootMargin: '-2px'
+    }
+    const observer = new IntersectionObserver(function (entries, observer) {
+        let flag = 0;
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                if(flag == 0){
+                    entry.target.classList.add("animate-fadeLeft");
+                    flag = 1;
+                }
+                else{
+                    entry.target.classList.add("animate-fadeRight");
+                    flag = 0
+                }
+            } else {
+                entry.target.classList.remove("animate-fadeLeft");
+                entry.target.classList.remove("animate-fadeRight");
+            }
+        });
+    }, options);
+    elems.forEach(elem => {
+        elem.classList.add("opacity-0");
+        observer.observe(elem);
+    })
+</script>
+
+</html>

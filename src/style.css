@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+.hamburger.active .bar:nth-child(2){
+    @apply opacity-0;    
+}
+.hamburger.active .bar:nth-child(1){
+    @apply rotate-45 translate-y-2.5;    
+}
+.hamburger.active .bar:nth-child(3){
+    @apply -rotate-45 -translate-y-2.5;
+}
+.light-up{
+    @apply bg-slate-50 text-black shadow-md;
+}
+
+.nav-menu.active{
+    @apply right-0;
+}
+
+/* button */
+.cool-btn{
+    @apply font-[500] z-[1] text-[#0e4667] text-xl py-[6px] px-[10px] my-4 mx-8 bg-transparent border-0 outline-0 transition-all duration-300 ease-in-out relative rounded-[10px] cursor-pointer before:content-[''] before:h-[50px] before:w-[50px] before:bg-[#77bcc2] before:absolute before:top-0 before:left-0  before:-translate-x-[30px] before:-translate-y-[10%] before:-z-[1] before:rounded-[25px] before:transition-all before:duration-[400ms] before:ease-rubber hover:before:w-[120%] hover:before:-translate-x-[10px] hover:before:-translate-y-[10%] focus:before:w-[115%] focus:before:-translate-x-[10px] focus:before:-translate-y-[10%];
+}
+.btn{
+    @apply text-white bg-[#1b8c94] py-1 px-4 rounded-md transition-all duration-200 ease-out hover:bg-[#0f595d] focus:bg-[#0f595d] hover:scale-105 active:scale-95;
+}
+
+/* Radio button put this class in label */
+.radio-btn{
+    @apply relative before:inline-block before:w-[20px] before:h-[20px] before:border-2 before:border-[#1b8c94] before:rounded-full before:-mb-1 before:mr-2 after:content-[''] after:w-[12px] after:h-[12px] after:inline-block after:bg-[rgba(27,140,148,0)] after:absolute after:top-[5px] after:left-[4px] after:rounded-full after:transition-all duration-200 ease-in after:peer-checked:bg-[rgba(27,140,148,1)]
+}
+
+.check-box{
+    @apply z-0 transition-all duration-200 relative leading-6 cursor-pointer inline-block pl-1 before:transition before:duration-200 before:rounded before:absolute before:content-[''] before:top-[2px] before:-left-[18px] before:h-5 before:w-5 before:border-2 before:border-[#0e4667] after:content-[''] after:bg-[url('./images/check.png')] after:invert after:bg-contain after:transition after:duration-200 after:absolute after:top-[2px] after:-left-[18px] after:h-5 after:w-5 after:scale-0 after:opacity-0 peer-checked:after:opacity-100 peer-checked:after:scale-100 peer-checked:before:bg-[#0e4667]
+}
+.form-inputBox{
+    @apply mt-1 mb-3 px-3 py-2 bg-white border shadow-md border-slate-400 placeholder-slate-400 focus:outline-none focus:border-[#1b8c94] focus:ring-[#1b8c94] block w-full rounded-md sm:text-sm focus:ring-1
+}
+
+.active-ln{
+    @apply  bg-slate-200 border-l-2 border-l-[#0c4363];
+}
+
+.animate-fadeLeft{
+    animation: fadeLeft .8s ease-out forwards ;
+}
+@keyframes fadeLeft{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animate-fadeRight{
+    animation: fadeRight .8s ease-out forwards ;
+}
+@keyframes fadeRight{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Loader */
+.loader {
+    border: 8px solid white;
+    border-bottom: 8px solid #0e4667;
+    border-top: 8px solid #0e4667;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    animation: spinLoader 1s linear infinite;
+}
+.loader-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+}
+@keyframes spinLoader {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@tailwind utilities;
